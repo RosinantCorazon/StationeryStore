@@ -70,6 +70,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\AutoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ViewWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,6 +120,9 @@
     </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>StationeryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AutoWindow.xaml.cs">
+      <DependentUpon>AutoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\ViewWindow.xaml.cs">
       <DependentUpon>ViewWindow.xaml</DependentUpon>

@@ -57,9 +57,9 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Label ToolTip="Вправо" Content="-)" Name="NextPage" MouseDown="NextPage_MouseDown" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14"/>
-        <Label Content="1" Name="NumOfPage" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14" Margin="0,0,15,0"/>
-        <Label ToolTip="Влево" Content="(-" MouseDown="PrevPage_MouseDown" Name="PrevPage" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14" Margin="0,0,25,0"/>
+        <Label ToolTip="Вправо" Content="Вправо" Name="NextPage" MouseDown="NextPage_MouseDown" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14"/>
+        <Label Content="1" Name="NumOfPage" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14" Margin="0,0,55,0"/>
+        <Label ToolTip="Влево" Content="Влево" MouseDown="PrevPage_MouseDown" Name="PrevPage" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14" Margin="0,0,65,0"/>
 
         <Label Content="15" MouseDown="PrevPage_MouseDown" Name="FirstNum" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14" />
         <Label Content="из" MouseDown="PrevPage_MouseDown"  HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Comic Sans MS" FontSize="14" Margin="20,0,0,0"/>
