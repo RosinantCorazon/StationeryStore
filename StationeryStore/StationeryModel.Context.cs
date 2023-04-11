@@ -19,7 +19,15 @@ namespace StationeryStore
             : base("name=StationeryStoreDBEntities")
         {
         }
-    
+
+        private static StationeryStoreDBEntities _context;
+        public static StationeryStoreDBEntities GetContext()
+        {
+            if (_context == null)
+                _context = new StationeryStoreDBEntities();
+            return _context;
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

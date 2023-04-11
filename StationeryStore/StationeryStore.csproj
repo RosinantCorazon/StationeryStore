@@ -45,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -156,6 +157,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\A346R4.jpg" />
+    <Resource Include="Resources\A543T6.jpg" />
+    <Resource Include="Resources\B730E2.jpg" />
+    <Resource Include="Resources\D419T7.png" />
+    <Resource Include="Resources\F719R5.jpg" />
+    <Resource Include="Resources\G278R6.png" />
+    <Resource Include="Resources\H452A3.png" />
+    <Resource Include="Resources\R259E6.jpg" />
+    <Resource Include="Resources\T564P5.jpg" />
+    <Resource Include="Resources\А112Т4.jpg" />
+    <None Include="bin\Debug\Resources\T564P5.jpg" />
+    <None Include="bin\Debug\Resources\А112Т4.jpg" />
+    <None Include="bin\Debug\Resources\A346R4.jpg" />
+    <None Include="bin\Debug\Resources\A543T6.jpg" />
+    <None Include="bin\Debug\Resources\B730E2.jpg" />
+    <None Include="bin\Debug\Resources\D419T7.png" />
+    <None Include="bin\Debug\Resources\F719R5.jpg" />
+    <None Include="bin\Debug\Resources\G278R6.png" />
+    <None Include="bin\Debug\Resources\H452A3.png" />
+    <None Include="bin\Debug\Resources\R259E6.jpg" />
+    <None Include="Resources\picture.png" />
     <Content Include="StationeryModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>StationeryModel.edmx</DependentUpon>
