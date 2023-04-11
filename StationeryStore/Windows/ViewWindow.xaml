@@ -1,0 +1,15 @@
+﻿<Window x:Class="StationeryStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StationeryStore"
+        mc:Ignorable="d"
+        Title="Канцелярия" Height="450" Width="800">
+    <Grid>
+        <StackPanel Height="40" VerticalAlignment="Top" Background="Bisque">
+            <Label Content="Канцелярия" FontFamily="Comic Sans MS" FontSize="20"></Label>
+        </StackPanel>
+        <Frame Name="MainFrame" Margin="0,40,0,0"/>
+    </Grid>
+</Window>
