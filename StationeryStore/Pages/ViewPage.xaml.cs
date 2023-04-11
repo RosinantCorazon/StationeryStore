@@ -102,14 +102,45 @@ namespace StationeryStore.Pages
 
         private void FiltrComboBox_DropDownClosed(object sender, EventArgs e)
         {
+            lb.ItemsSource = null;
+            lb.Items.Clear();
             if (FiltrComboBox.Text == "0-9.99")
             { 
             List<Products> Result = new List<Products>();
             foreach (var Research in ProductsList)
                 if (Research.CurrentDiscount <= 10)
                     Result.Add(Research);
-            for (int i = 1; i < Math.Min(15, Result.Count); i++)
+                for (int i = 1; i < Math.Min(15, Result.Count); i++)
+                    
                 lb.Items.Add(Result[i]);
+            }
+            if (FiltrComboBox.Text == "10-14.99")
+            {
+                List<Products> Result = new List<Products>();
+                foreach (var Research in ProductsList)
+                    if (Research.CurrentDiscount >= 10 && Research.CurrentDiscount <=15)
+                        Result.Add(Research);
+                for (int i = 1; i < Math.Min(15, Result.Count); i++)
+
+                    lb.Items.Add(Result[i]);
+            }
+            if (FiltrComboBox.Text == "15 и более")
+            {
+                List<Products> Result = new List<Products>();
+                foreach (var Research in ProductsList)
+                    if (Research.CurrentDiscount >= 15)
+                        Result.Add(Research);
+                for (int i = 1; i < Math.Min(15, Result.Count); i++)
+
+                    lb.Items.Add(Result[i]);
+            }
+            if (FiltrComboBox.Text == "Весь диапозон")
+            {
+                lb.ItemsSource = null;
+                lb.Items.Clear();
+                for (int i = 1; i < 15; i++)
+
+                    lb.Items.Add(ProductsList[i]);
             }
 
         }
